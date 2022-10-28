@@ -5,7 +5,7 @@ using Core.Specifications;
 
 namespace Core.Interfaces
 {
-    public in IGenericRepository<T> where T : BaseEntity
+    public int IGenericRepository<T> where T : BaseEntity
     {
         Task<T> GetByIdAsync(int id);
         Task<IReadOnlyList<T>> ListAllAsync();
